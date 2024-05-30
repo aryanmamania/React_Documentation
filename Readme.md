@@ -12,7 +12,7 @@ ReactJS is much easier to learn and use. It comes with a good supply of document
 
 
 2) REUSABILITY   
-Reusability means that we can reuse same components in multiple different places within your project   
+Reusability means that we can reuse same components in multiple different places within your project     
 // Components : Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc
 
 3) FLEXIBILITY   
