@@ -90,7 +90,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 Let's create a simple "Hello World" component to get a feel for how React works.
 
-### Steps
+### Steps to Write Hello World 
 
 1. **Open Your Project in a Code Editor**:
    - Use a code editor like Visual Studio Code (VS Code) to open the `my-app` directory.
@@ -114,6 +114,34 @@ Let's create a simple "Hello World" component to get a feel for how React works.
 3. **Run Your Application**:
    - If the development server is not already running, start it by running `npm start` in your terminal.
    - Open your web browser and navigate to `http://localhost:3000`. You should see "Hello, World!" displayed on the page.
+
+## Core Concepts of React
+
+### JSX 
+JSX stands for javascript XML and it allows us to write HTML in react 
+So basically it converts HTML into React elements 
+
+** Example 1 **
+```
+const myElement = (
+  <div>
+    <p>This is a react documentation</p>
+    <p>It is written by Aryan Mamania</p>
+  </div>
+);
+```
+
+** Example 2 **
+Write "Hello" if x is less than 10, otherwise "Goodbye":
+```
+const x = 5;
+let text = "Goodbye";
+if (x < 10) {
+  text = "Hello";
+}
+
+const myElement = <h1>{text}</h1>;
+```
 
 
 
