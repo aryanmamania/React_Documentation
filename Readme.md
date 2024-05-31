@@ -122,7 +122,7 @@ JSX stands for javascript XML and it allows us to write HTML in react
 So basically it converts HTML into React elements 
 
 ** Example 1 **
-```
+```jsx
 const myElement = (
   <div>
     <p>This is a react documentation</p>
@@ -133,7 +133,7 @@ const myElement = (
 
 ** Example 2 **
 Write "Hello" if x is less than 10, otherwise "Goodbye":
-```
+```jsx
 const x = 5;
 let text = "Goodbye";
 if (x < 10) {
