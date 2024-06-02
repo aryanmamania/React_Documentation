@@ -3,7 +3,7 @@
 ## WHAT IS REACT ?
 React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience.
 
-// Library : A library is a collection of pre-written code that you can use to perform specific tasks
+  // Library : A library is a collection of pre-written code that you can use to perform specific tasks
 
 ## ADVANTAGES OF REACT 
 
@@ -121,7 +121,7 @@ Let's create a simple "Hello World" component to get a feel for how React works.
 JSX stands for javascript XML and it allows us to write HTML in react 
 So basically it converts HTML into React elements 
 
-** Example 1 **
+**Example 1**
 ```jsx
 const myElement = (
   <div>
@@ -131,7 +131,7 @@ const myElement = (
 );
 ```
 
-** Example 2 **
+**Example 2**
 Write "Hello" if x is less than 10, otherwise "Goodbye":
 ```jsx
 const x = 5;
@@ -142,6 +142,76 @@ if (x < 10) {
 
 const myElement = <h1>{text}</h1>;
 ```
+
+### Components
+Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc
+Componets are independent and reusable bits of code 
+There are 2 types of React componets -
+- Functional Components
+Functional components are JavaScript functions that return React elements. They are used to build parts of the user interface in a React application. They may or may not recieve data as paramaeters 
+
+Note :- The functional component is also known as a stateless component because they do not hold or manage state.
+
+- Class based Components 
+
+__________________________________________________________________________________________________________________________
+
+
+
+### Props
+Props is shorrt for properties and are used to pass data from one component to another . Props are similiar to function arguments and are passed to components in same was as arguments are passed in a function .  
+The child component can't modify the props it recieves and can only read and use the props  
+
+Example using Props-
+App.js File (Parent class where we will define Props)
+```jsx 
+import React from 'react';
+import Greeting from './Greeting';
+
+
+function App() {
+  
+  const userName = 'Mamania';  // This is the data we want to pass to the child component
+
+ 
+  return (
+    <div>
+      <Greeting name={userName} />  {/* Where Props is userName */}
+    </div>
+  );
+}
+
+export default App;
+```
+Greeting.js file (Child component where we will pass the Props)
+```jsx  
+import React from 'react';
+
+function Greeting(props) {
+  // Access the name prop from the props object
+  const { name } = props;
+
+  // Use the name prop to display a greeting message
+  return <h1>Hello, {name}!</h1>;
+}
+
+export default Greeting;
+```
+OutPut -
+```jsx
+Hello, Mamania!
+```
+
+## State Management 
+Hooks are an important concept in react . 
+State in React is like an object that stores information about the current state or state of your component. In easy words we can say how it is actually looking like in a given point of time . This information may change over time, and React will update the feature to reflect the latest information.  
+
+State as a Data Store: Each React component can have its own state, which stores dynamic information that the component can use and display.
+Accessing State: In class components, you access the state using this.state.
+Changing State: When the state changes, React automatically re-renders the component to show the new state.
+
+
+
 
 
 
