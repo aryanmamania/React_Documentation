@@ -206,9 +206,11 @@ Hello, Mamania!
 Hooks are an important concept in react . 
 State in React is like an object that stores information about the current state or state of your component. In easy words we can say how it is actually looking like in a given point of time . This information may change over time, and React will update the feature to reflect the latest information.  
 
-State as a Data Store: Each React component can have its own state, which stores dynamic information that the component can use and display.
-Accessing State: In class components, you access the state using this.state.
-Changing State: When the state changes, React automatically re-renders the component to show the new state.
+<u> State as a Data Store: </u>Each React component can have its own state, which stores dynamic information that the component can use and display.  
+
+<u> Accessing State: </u>In class components, you access the state using this.state.  
+
+<u> Changing State: </u>When the state changes, React automatically re-renders the component to show the new state.
 
 
 
