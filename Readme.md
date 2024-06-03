@@ -87,7 +87,7 @@ Before you begin, make sure you have the following installed on your machine:
      Your new React application will open in your default web browser at `http://localhost:3000` (port number can change if port 3000 is busy with some other content)
 
 5. **Folder Structure of a simple React Project**
-<img src="./assests/folder1.PNG" alt="" style="width: 100%;"/>
+<img src="./assests/folder1.PNG" alt="" style="width: 40%;"/>
 
 ## Hello World
 
