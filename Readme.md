@@ -278,7 +278,52 @@ The above code will also do same thing . When the button will be clicked it will
 ### Event Handling 
 
 ## Event   
-An event is an action that could be triggered as a result of user action or system generated event gi 
+An event is an action that could be triggered as a result of user action or system generated event . For example a mouse click event which is written as `onClick event`  
+It captures and responds to user actions within application.
+
+React uses different ways to handle event 
+Some of The most common event handling techniques are 
+ 1) Mouse Events:
+- onClick : Triggered when an element is clicked 
+- onDoubleClick : Triggered when an action is doubleClicked
+- onMouseEnter : Triggered when mouse pointer enters the element
+- onMouseLeave : Triggered when mouse pointer leaves the element
+2) Keyboard Events:
+- onKeyDown : Triggered when a key is pressed down
+- onKeyPress : Triggered when a key is pressed and held down
+- onKeyUp : Triggered when a key is released
+3) Form Events :
+- onChange : Triggered when the value of an element changes
+- onSubmit : Triggered when a form is submitted.
+- onInput : Triggered when the value of an input element is changed.
+```jsx
+import React, { Component } from 'react';
+
+// Define a React component named ClickButton
+class ClickButton extends Component {
+
+  // Define a method to handle the click event
+  handleClick = () => {
+
+    // Display an alert when the button is clicked
+    alert('Button was clicked!');
+  }
+
+  // Render method to output the component's UI
+  render() {
+    return (
+      // Button element with an onClick event handler
+      <button onClick={this.handleClick}>
+        Click Me
+      </button>
+    );
+  }
+}
+
+// Export the component so it can be used in other parts of the application
+export default ClickButton;
+```
+In the above code whenever a button is clicked it shows an alert stating that button was clicked 
 
 
 
