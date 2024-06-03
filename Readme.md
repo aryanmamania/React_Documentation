@@ -216,7 +216,70 @@ State in React is like an object that stores information about the current state
 ### State Management 
 Changing State is a part of State Managmenet which allows state to maintain and update state accordingly . For example in a task management app when we add a task , a task is added and is considered as a change of state or state management . 
 State management helps in making the webpage look dynamic .
-In React , state management can be managed within components using 'useState' hook for functional component or 'this.state' for class component .
+We can change the component state by using the setState() method and passing a new state object as the argument
+In React , state management can be managed within components using 'useState' hook for functional component or 'this.state' for class component .  
+
+- Functional Component with useState  
+```jsx
+import React, { useState } from 'react';
+
+function Counter() {     //we made a functional called counter
+    const [count, setCount] = useState(0);   // count is initial state and setCount is state after changing state and initital state is 0  
+
+    return (
+        <div>
+            <p>{count}</p>
+            <button onClick={() => setCount(count + 1)}>Increment</button> 
+        </div>
+    );
+}
+```
+In this above code whenever the button will be clicked its count will increase by 1 number. 
+
+- Class Component with this.state
+```jsx
+import React, { Component } from 'react';
+
+// Define a class component named Counter
+class Counter extends Component {
+    // Constructor method to initialize state
+    constructor(props) {
+        super(props); // Call the parent class's constructor
+        this.state = { count: 0 }; // Initialize state with a count property set to 0
+    }
+
+    // Arrow function to handle incrementing the count
+    increment = () => {
+        // Update the state with the new count value
+        this.setState({ count: this.state.count + 1 });
+    }
+
+    // Render method to define what the UI looks like
+    render() {
+        return (
+            <div>
+                {/* Display the current count */}
+                <p>{this.state.count}</p>
+                {/* Button to trigger the increment method on click */}
+                <button onClick={this.increment}>Increment</button>
+            </div>
+        );
+    }
+}
+
+export default Counter; // Export the Counter component as the default export
+```
+The above code will also do same thing . When the button will be clicked it will increase the value by 1 number . Initial State is 0
+
+**Note**
+- useState is used in class component 
+- this.state is used in functional component
+
+### Event Handling 
+
+## Event   
+An event is an action that could be triggered as a result of user action or system generated event gi 
+
 
 
 
