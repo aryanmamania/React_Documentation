@@ -327,16 +327,16 @@ In the above code whenever a button is clicked it shows an alert stating that bu
 
 ### Difference between State Management and Event Handling 
 
-|-------------------------------------------------------------------------------------------------------------|
-| Aspect             | State Management                                    Event Handling                     |
-|--------------------------------------------------------------------|----------------------------------------|
-| **Definition**     | Managing state or data of a component         | Capturing and responing to user action |
-| **Purpose**        | To maintain and update Data                   | Allow Components to interact with Ui   |
-| **Typical Usage**  | Keeping tracks of form inputs , Toggling UI   | Responding to button Clicks ,  form    |
-|                    | elements , storing fetched Data               | submissions , Mouse movements          |
-| **Key Methods**    | 'useState', 'setState', 'useReducer'          | Different Event Handler Methods        |
-| **Trigger**        | events , timers , network responses           | Clicks , key presses , Mouse events    | 
-|-------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------|-----------------------------------------|
+| Aspect             | State Management                        |            Event Handling               |
+|--------------------------------------------------------------|----------------------------------------|
+|Definition    | Managing state or data of a component         | Capturing and responing to user action |
+|Purpose       | To maintain and update Data                   | Allow Components to interact with Ui   |
+|Typical Usage | Keeping tracks of form inputs , Toggling UI   | Responding to button Clicks ,  form    |
+|              | elements , storing fetched Data               | submissions , Mouse movements          |
+|Key Methods   | 'useState', 'setState', 'useReducer'          | Different Event Handler Methods        |
+|Trigger       | events , timers , network responses           | Clicks , key presses , Mouse events    | 
+|-------------------------------------------------------------------------------------------------------|
 
 ## Hooks 
 
