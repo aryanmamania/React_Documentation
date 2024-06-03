@@ -336,7 +336,7 @@ In the above code whenever a button is clicked it shows an alert stating that bu
 |              | elements , storing fetched Data               | submissions , Mouse movements          |
 |Key Methods   | 'useState', 'setState', 'useReducer'          | Different Event Handler Methods        |
 |Trigger       | events , timers , network responses           | Clicks , key presses , Mouse events    | 
-|-------------------------------------------------------------------------------------------------------|
+|--------------|-----------------------------------------------|----------------------------------------|
 
 ## Hooks 
 
