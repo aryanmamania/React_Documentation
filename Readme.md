@@ -351,8 +351,179 @@ Commonly Used Hooks
 
 Example of hook with help of useState
 ```jsx
+import React, { useState } from 'react';
 
+// Custom hook to manage true or false state also known as boolean stage
+function useToggle(initialValue) {This custom hook manages a boolean state (value). It initializes the state with the provided initialValue (either true or false). It also provides a toggle function to switch the boolean value between true and false
+  const [value, setValue] = useState(initialValue);
+
+  // Function to toggle the boolean value
+  const toggle = () => {
+    setValue(!value);
+  };
+
+  // Return the boolean value and the toggle function
+  return [value, toggle];
+}
+
+// Example component using the custom hook
+function ToggleButton() {
+  // Use the custom hook to get the boolean state and toggle function
+  const [isOn, toggleIsOn] = useToggle(false);
+
+  return (
+    <div>
+      <p>Toggle: {isOn ? 'ON' : 'OFF'}</p>
+      <button onClick={toggleIsOn}>Toggle</button>
+    </div>
+  );
+}
+
+export default ToggleButton;
 ```
+Output will be if you run the ToggleButton component provided, the output will be a toggle button displayed on the webpage. Initially, the text will show "Toggle: OFF" and there will be a button labeled "Toggle". When you click the "Toggle" button, the text will change between "Toggle: ON" and "Toggle: OFF" each time you click it, indicating the state of the toggle.
+
+Hook Rules -
+- Hooks can be only called inside React function components
+- Hooks can only be called at top level of components
+- Hooks cannot be conditional 
+
+### Custom Hooks 
+    Custom hooks are user-defined functions in React that utilize one or more built-in React hooks to encapsulate and reuse stateful logic. Custom hooks follow the naming convention of starting with "use" to enable them to leverage React's hook system. They allow developers to extract common logic from components and share it across multiple components. Custom hooks are not built-in; developers create them according to their specific needs.
+
+## React Router 
+React Router is yet another important library for routing in react and enables navigation from one oage to another or from one component to another . React Router changes the browser URL and shows the page which is specified in givenn URL .  
+Main advantage of using React router is that React Router helps in creating single-page applications with navigation and multiple views without the need for refreshing the page.This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
+
+
+### Note 
+There were many changes made when react router was shifted from react-router v5 to v6 . This documentation contains information for react router v6
+
+### How to install React Router
+Run the below command in your terminal 
+```
+npm i -D react-router-dom 
+```
+
+### Main Components of React Router are :-
+
+- BrowserRouter: BrowserRouter is a router implementation that uses the HTML5 history API(pushState, replaceState, and the popstate event) to keep your UI in sync with the URL. It is the parent component that is used to store all of the other components.
+- Routes: It’s a new component introduced in the v6 and an upgrade of the component. The main advantages of Routes over Switch Routes are chosen based on the best match instead of being traversed in order.
+- Route: Route is the conditionally shown component that renders some UI when its path matches the current URL.
+- Link: The link component is used to create links to different routes and implement navigation around the application. It works like an HTML anchor tag.
+
+Example of React Router in React JS
+
+```jsx
+import React, { Component } from "react";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link,
+} from "react-router-dom";
+import Home from "./component/home";
+import About from "./component/about";
+import Contact from "./component/contact";
+import "./App.css";
+
+class App extends Component {
+    render() {
+        return (
+            <Router>
+                <div className="App">
+                    <ul className="App-header">
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">
+                                About Us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">
+                                Contact Us
+                            </Link>
+                        </li>
+                    </ul>
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={<Home />}
+                        ></Route>
+                        <Route
+                            path="/about"
+                            element={<About />}
+                        ></Route>
+                        <Route
+                            path="/contact"
+                            element={<Contact />}
+                        ></Route>
+                    </Routes>
+                </div>
+            </Router>
+        );
+    }
+}
+
+export default App;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
