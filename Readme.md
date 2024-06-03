@@ -202,15 +202,23 @@ OutPut -
 Hello, Mamania!
 ```
 
-## State Management 
-Hooks are an important concept in react . 
+## State Management   
+
+### State
 State in React is like an object that stores information about the current state or state of your component. In easy words we can say how it is actually looking like in a given point of time . This information may change over time, and React will update the feature to reflect the latest information.  
 
-- State as a Data Store </u>: Each React component can have its own state, which stores dynamic information that the component can use and display.  
+- State as a Data Store: Each React component can have its own state, which stores dynamic information that the component can use and display.  
 
-- Accessing State: </u>In class components, you access the state using this.state.  
+- Accessing State: In class components, you access the state using this.state.  
 
-- Changing State: </u>When the state changes, React automatically re-renders the component to show the new state.
+- Changing State: When the state changes, React automatically re-renders the component to show the new state.   
+
+### State Management 
+Changing State is a part of State Managmenet which allows state to maintain and update state accordingly . For example in a task management app when we add a task , a task is added and is considered as a change of state or state management . 
+State management helps in making the webpage look dynamic .
+In React , state management can be managed within components using 'useState' hook for functional component or 'this.state' for class component .
+
+
 
 
 
