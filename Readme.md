@@ -86,6 +86,9 @@ Before you begin, make sure you have the following installed on your machine:
      ```
      Your new React application will open in your default web browser at `http://localhost:3000` (port number can change if port 3000 is busy with some other content)
 
+5. **Folder Structure of a simple React Project**
+<img src="https://www.geeksforgeeks.org/folder-structure-for-a-react-js-project/" alt="" style="width: 100%;"/>
+
 ## Hello World
 
 Let's create a simple "Hello World" component to get a feel for how React works.
@@ -469,6 +472,9 @@ class App extends Component {
 
 export default App;
 ```
+The above code shows different route which takes us to different elements. When going from one page to another the whole page does not get loaded again and only the components which are required are loaded which makes the webpage more efficient.
+
+
 
 
 
