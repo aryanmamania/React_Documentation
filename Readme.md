@@ -1,6 +1,18 @@
 # **REACT**
 <img src="/assests//react.js-img.png" alt="" style="width: 40%;"/>
 
+## Table of Content
+- What is React
+- Advantages of React
+- Comparision between React and Anglular 
+- Getting Started with React
+- Hello World 
+- Core Concepts of React 
+- State Management 
+- Event Handling 
+- Hooks 
+- React Router
+
 ## WHAT IS REACT ?
 React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience.
 
@@ -10,7 +22,6 @@ React is a popular open-source JavaScript library  developed by Facebook for bui
 
 1) EASY TO LEARN  
 ReactJS is much easier to learn and use. It comes with a good supply of documentation, tutorials, and training resources. Any developer who comes from a JavaScript background can easily understand and start creating web apps using React in a few days
-
 
 2) REUSABILITY   
 Reusability means that we can reuse same components in multiple different places within your project    
@@ -156,11 +167,86 @@ Functional components are JavaScript functions that return React elements. They 
 
 Note :- The functional component is also known as a stateless component because they do not hold or manage state.
 
+Example -
+```jsx
+import React, { useState } from 'react';
+
+// This is a functional component named Counter
+function Counter() {
+  // Declare a state variable named 'count' with an initial value of 0
+  // useState is a hook that returns a stateful value and a function to update it
+  const [count, setCount] = useState(0);
+
+  // The return statement defines the component's UI
+  return (
+    <div>
+      {/* Display the current count */}
+      <p>You clicked {count} times</p>
+      {/* When the button is clicked, update the count state */}
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+
 - Class based Components 
+React Class Components are JavaScript classes that extend React.Component. They define the UI, manage state, and handle events within your application. Unlike functional components, which are based on function syntax, class components follow the traditional class-based approach.
+After introduction of React Hooks use of class components has decreased because react hooks makes the code look clean and syntax is easy to understand
+The render() method in react class components returns JSX elements describing the UI of the Application.
 
-__________________________________________________________________________________________________________________________
+Example -
+```jsx 
+import React, { Component } from 'react';
 
+// Define a class-based component by extending React.Component
+class Counter extends Component {
+  // Constructor method to initialize state
+  constructor(props) {
+    super(props); // Call the superclass constructor
+    // Initialize the state with a count property
+    this.state = {
+      count: 0,
+    };
+  }
 
+  // Method to handle incrementing the count
+  increment = () => {
+    // Update the state using setState
+    this.setState((prevState) => ({
+      count: prevState.count + 1,
+    }));
+  };
+
+  // Method to handle decrementing the count
+  decrement = () => {
+    // Update the state using setState
+    this.setState((prevState) => ({
+      count: prevState.count - 1,
+    }));
+  };
+
+  // The render method returns the JSX to be rendered
+  render() {
+    return (
+      <div>
+        {/* Display the current count */}
+        <h1>Count: {this.state.count}</h1>
+        {/* Button to increment the count */}
+        <button onClick={this.increment}>Increment</button>
+        {/* Button to decrement the count */}
+        <button onClick={this.decrement}>Decrement</button>
+      </div>
+    );
+  }
+}
+
+// Export the component to be used in other parts of the app
+export default Counter;
+```
 
 ### Props
 Props is shorrt for properties and are used to pass data from one component to another . Props are similiar to function arguments and are passed to components in same was as arguments are passed in a function .  
@@ -176,8 +262,6 @@ import Greeting from './Greeting';
 function App() {
   
   const userName = 'Mamania';  // This is the data we want to pass to the child component
-
- 
   return (
     <div>
       <Greeting name={userName} />  {/* Where Props is userName */}
@@ -279,9 +363,9 @@ The above code will also do same thing . When the button will be clicked it will
 - useState is used in class component 
 - this.state is used in functional component
 
-### Event Handling 
+## Event Handling 
 
-## Event   
+### Event   
 An event is an action that could be triggered as a result of user action or system generated event . For example a mouse click event which is written as `onClick event`  
 It captures and responds to user actions within application.
 
