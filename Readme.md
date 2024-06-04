@@ -13,10 +13,15 @@
 - Hooks 
 - React Router
 
+## Some terminologies you should know before starting documentation
+- Library : A library is a collection of pre-written code that you can use to perform specific tasks
+- UI : User Interface means the things which user sees when he/she opens the Web app
+- Rendering : Rendering in React refers to the process of generating the user interface (UI) that the user sees on the screen based on the state and data of the application
+- Single Web Page application : A Single Page Application is a type of web application that loads a single HTML page and dynamically updates the content as the user interacts with the app, without requiring a full page reload.
+- Asynchronous : Asynchronous means that some tasks can start, and you don't have to wait for them to finish before moving on to other tasks
+
 ## WHAT IS REACT ?
 React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience.
-
-  // Library : A library is a collection of pre-written code that you can use to perform specific tasks
 
 ## ADVANTAGES OF REACT 
 
@@ -25,8 +30,6 @@ ReactJS is much easier to learn and use. It comes with a good supply of document
 
 2) REUSABILITY   
 Reusability means that we can reuse same components in multiple different places within your project    
-         
-// Components : Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc
 
 3) FLEXIBILITY   
 Flexibility in React means the code is easier to work with and update because it's built in small, separate pieces called components. This makes React code easier to understand and maintain compared to other frontend frameworks.
