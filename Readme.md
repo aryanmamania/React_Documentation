@@ -310,7 +310,7 @@ State management helps in making the webpage look dynamic .
 We can change the component state by using the setState() method and passing a new state object as the argument
 In React , state management can be managed within components using 'useState' hook for functional component or 'this.state' for class component .  
 
-- Functional Component with useState  
+- Example of Functional Component with State Management   
 ```jsx
 import React, { useState } from 'react';
 
@@ -358,7 +358,7 @@ class Counter extends Component {
     }
 }
 
-export default Counter; // Export the Counter component as the default export
+export default Counter;
 ```
 The above code will also do same thing . When the button will be clicked it will increase the value by 1 number . Initial State is 0
 
@@ -481,6 +481,9 @@ Hook Rules -
 
 ### Custom Hooks 
     Custom hooks are user-defined functions in React that utilize one or more built-in React hooks to encapsulate and reuse stateful logic. Custom hooks follow the naming convention of starting with "use" to enable them to leverage React's hook system. They allow developers to extract common logic from components and share it across multiple components. Custom hooks are not built-in; developers create them according to their specific needs.
+
+### Basic difference betweeen State and Hooks 
+State is a way to store information in react component that can change over time when components are updated while hooks are Hooks are special functions provided by React that enable you to use React features, like state, context, and more, in function components. Before hooks, these features were only available in class components
 
 ## React Router 
 React Router is yet another important library for routing in react and enables navigation from one oage to another or from one component to another . React Router changes the browser URL and shows the page which is specified in givenn URL .  
