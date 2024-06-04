@@ -1,5 +1,5 @@
 # **REACT**
-<img src="/assests//react.js-img.png" alt="" style="width: 40%;"/>
+<img src="/assests//react.js-img.png" alt="" style="width:100%;"/>
 
 ## Table of Content
 - What is React
