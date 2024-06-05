@@ -1,10 +1,11 @@
 # **REACT**
 <img src="/assests//react.js-img.png" alt="" style="width:100%;"/>
+<img src="/assests/screenshot_myfirstreact.png" alt="" style="width:50" />
 
 ## Table of Content
 - What is React
 - Advantages of React
-- Comparision between React and Anglular 
+- Comparison between React and Angular
 - Getting Started with React
 - Hello World 
 - Core Concepts of React 
@@ -19,9 +20,10 @@
 - Rendering : Rendering in React refers to the process of generating the user interface (UI) that the user sees on the screen based on the state and data of the application
 - Single Web Page application : A Single Page Application is a type of web application that loads a single HTML page and dynamically updates the content as the user interacts with the app, without requiring a full page reload.
 - Asynchronous : Asynchronous means that some tasks can start, and you don't have to wait for them to finish before moving on to other tasks
+- Jsx : JavaScript Xml is a syntax extension for javascript in react where we can write html code within javascript making code look more clean and readable
 
 ## WHAT IS REACT ?
-React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience.
+React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. 
 
 ## ADVANTAGES OF REACT 
 
@@ -99,7 +101,9 @@ Before you begin, make sure you have the following installed on your machine:
      ```bash
      npm start
      ```
-     Your new React application will open in your default web browser at `http://localhost:3000` (port number can change if port 3000 is busy with some other content)
+     Your new React application will open in your default web browser at `http://localhost:3000` (port number can change if port 3000 is busy with some other content)  
+     You will see a react logo in browser . Below is the Screen Shot for the webpage which you will see 
+     
 
 5. **Folder Structure of a simple React Project**
 <img src="./assests/folder1.PNG" alt="" style="width: 40%;"/>
