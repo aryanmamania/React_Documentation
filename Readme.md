@@ -1,6 +1,5 @@
 # **REACT**
 <img src="/assests//react.js-img.png" alt="" style="width:100%;"/>
-<img src="/assests/screenshot_myfirstreact.png" alt="" style="width:50" />
 
 ## Table of Content
 - What is React
@@ -103,7 +102,7 @@ Before you begin, make sure you have the following installed on your machine:
      ```
      Your new React application will open in your default web browser at `http://localhost:3000` (port number can change if port 3000 is busy with some other content)  
      You will see a react logo in browser . Below is the Screen Shot for the webpage which you will see 
-     
+<img src="/assests/screenshot_myfirstreact.png" alt="" style="width:50" /> 
 
 5. **Folder Structure of a simple React Project**
 <img src="./assests/folder1.PNG" alt="" style="width: 40%;"/>
