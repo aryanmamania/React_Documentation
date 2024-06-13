@@ -21,10 +21,10 @@
 - Asynchronous : Asynchronous means that some tasks can start, and you don't have to wait for them to finish before moving on to other tasks
 - Jsx : JavaScript Xml is a syntax extension for javascript in react where we can write html code within javascript making code look more clean and readable
 
-## WHAT IS REACT ?
+## What is React ?
 React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. 
 
-## ADVANTAGES OF REACT 
+## Advantages of React
 
 - Easy to Learn  
 ReactJS is much easier to learn and use. It comes with a good supply of documentation, tutorials, and training resources. Any developer who comes from a JavaScript background can easily understand and start creating web apps using React in a few days
@@ -39,7 +39,7 @@ Flexibility in React means the code is easier to work with and update because it
 Building of single web page application can be considered as advantage of React because it provides Fast and Responsive User Experience
 
 
-## COMPARISION BETWEEEN REACT AND ANGULAR
+## Comparision between React and Angular
 
 ### React
 
@@ -60,7 +60,7 @@ Building of single web page application can be considered as advantage of React 
 - **RxJS**: Utilizes RxJS for reactive programming, making it easier to handle asynchronous data streams.
 - **Angular CLI**: Provides a powerful command-line interface to scaffold and manage projects easily.  
 
-## GETTING STARTED WITH REACT
+## Getting Started with React
 
 ## Installation
 
@@ -168,10 +168,11 @@ const myElement = <h1>{text}</h1>;
 Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc
 Componets are independent and reusable bits of code 
 There are 2 types of React componets -
+
 - Functional Components
 Functional components are JavaScript functions that return React elements. They are used to build parts of the user interface in a React application. They may or may not recieve data as paramaeters 
 
-Note :- The functional component is also known as a stateless component because they do not hold or manage state.
+**Note**  :- The functional component is also known as a stateless component because they do not hold or manage state.
 
 Example -
 ```jsx
@@ -255,7 +256,7 @@ export default Counter;
 ```
 
 ### Props
-Props is shorrt for properties and are used to pass data from one component to another . Props are similiar to function arguments and are passed to components in same was as arguments are passed in a function .  
+Props is short for properties and are used to pass data from one component to another . Props are similiar to function arguments and are passed to components in same was as arguments are passed in a function .  
 The child component can't modify the props it recieves and can only read and use the props  
 
 Example using Props-
@@ -303,7 +304,7 @@ State in React is like an object that stores information about the current state
 
 - State as a Data Store: Each React component can have its own state, which stores dynamic information that the component can use and display.  
 
-- Accessing State: In class components, you access the state using this.state.  
+- Accessing State: In class components, you access the state using "this.state".  
 
 - Changing State: When the state changes, React automatically re-renders the component to show the new state.   
 
@@ -311,7 +312,7 @@ State in React is like an object that stores information about the current state
 Changing State is a part of State Managmenet which allows state to maintain and update state accordingly . For example in a task management app when we add a task , a task is added and is considered as a change of state or state management . 
 State management helps in making the webpage look dynamic .
 We can change the component state by using the setState() method and passing a new state object as the argument
-In React , state management can be managed within components using 'useState' hook for functional component or 'this.state' for class component .  
+In React, state management can be managed within components using 'useState' hook for functional component or 'this.state' for class component .  
 
 - Example of Functional Component with State Management   
 ```jsx
@@ -328,7 +329,7 @@ function Counter() {     //we made a functional called counter
     );
 }
 ```
-In this above code whenever the button will be clicked its count will increase by 1 number. 
+In this above code whenever the button will be clicked it's count will increase by 1 number. 
 
 - Class Component with this.state
 ```jsx
@@ -378,18 +379,18 @@ It captures and responds to user actions within application.
 React uses different ways to handle event 
 Some of The most common event handling techniques are 
  1) Mouse Events:
-- onClick : Triggered when an element is clicked 
-- onDoubleClick : Triggered when an action is doubleClicked
-- onMouseEnter : Triggered when mouse pointer enters the element
-- onMouseLeave : Triggered when mouse pointer leaves the element
+- onClick : Triggered when an element is clicked .
+- onDoubleClick : Triggered when an action is doubleClicked . 
+- onMouseEnter : Triggered when mouse pointer enters the element .
+- onMouseLeave : Triggered when mouse pointer leaves the element .
 2) Keyboard Events:
-- onKeyDown : Triggered when a key is pressed down
-- onKeyPress : Triggered when a key is pressed and held down
-- onKeyUp : Triggered when a key is released
+- onKeyDown : Triggered when a key is pressed down .
+- onKeyPress : Triggered when a key is pressed and held down .
+- onKeyUp : Triggered when a key is released .
 3) Form Events :
-- onChange : Triggered when the value of an element changes
-- onSubmit : Triggered when a form is submitted.
-- onInput : Triggered when the value of an input element is changed.
+- onChange : Triggered when the value of an element changes .
+- onSubmit : Triggered when a form is submitted .
+- onInput : Triggered when the value of an input element is changed .
 ```jsx
 import React, { Component } from 'react';
 
@@ -448,7 +449,9 @@ Example of hook with help of useState
 import React, { useState } from 'react';
 
 // Custom hook to manage true or false state also known as boolean stage
-function useToggle(initialValue) {This custom hook manages a boolean state (value). It initializes the state with the provided initialValue (either true or false). It also provides a toggle function to switch the boolean value between true and false
+// This custom hook manages a boolean state (value). It initializes the state with the provided initialValue (either true or false). 
+// It also provides a toggle function to switch the boolean value between true and false.
+function useToggle(initialValue) {
   const [value, setValue] = useState(initialValue);
 
   // Function to toggle the boolean value
@@ -459,6 +462,7 @@ function useToggle(initialValue) {This custom hook manages a boolean state (valu
   // Return the boolean value and the toggle function
   return [value, toggle];
 }
+
 
 // Example component using the custom hook
 function ToggleButton() {
@@ -477,29 +481,30 @@ export default ToggleButton;
 ```
 Output will be if you run the ToggleButton component provided, the output will be a toggle button displayed on the webpage. Initially, the text will show "Toggle: OFF" and there will be a button labeled "Toggle". When you click the "Toggle" button, the text will change between "Toggle: ON" and "Toggle: OFF" each time you click it, indicating the state of the toggle.
 
-Hook Rules -
+**Hook Rules** -
 - Hooks can be only called inside React function components
 - Hooks can only be called at top level of components
 - Hooks cannot be conditional 
 
 ### Custom Hooks 
-    Custom hooks are user-defined functions in React that utilize one or more built-in React hooks to encapsulate and reuse stateful logic. Custom hooks follow the naming convention of starting with "use" to enable them to leverage React's hook system. They allow developers to extract common logic from components and share it across multiple components. Custom hooks are not built-in; developers create them according to their specific needs.
+Custom hooks are user-defined functions in React that utilize one or more built-in React hooks to encapsulate and reuse stateful logic. Custom hooks follow the naming convention of starting with "use" to enable them to leverage React's hook system. They allow developers to extract common logic from components and share it across multiple components. Custom hooks are not built-in; developers create them according to their specific needs.
 
 ### Basic difference betweeen State and Hooks 
-State is a way to store information in react component that can change over time when components are updated while hooks are Hooks are special functions provided by React that enable you to use React features, like state, context, and more, in function components. Before hooks, these features were only available in class components
+State is a way to store information in react component that can change over time when components are updated while hooks are special functions provided by React that enable us to use React features, like state, context, and more in function components . Before hooks, these features were only available in class components
 
 ## React Router 
-React Router is yet another important library for routing in react and enables navigation from one oage to another or from one component to another . React Router changes the browser URL and shows the page which is specified in givenn URL .  
+React Router is yet another important library for routing in react and enables navigation from one page to another or from one component to another . React Router changes the browser URL and shows the page which is specified in givenn URL .  
 Main advantage of using React router is that React Router helps in creating single-page applications with navigation and multiple views without the need for refreshing the page.This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
 
 
 ### Note 
-There were many changes made when react router was shifted from react-router v5 to v6 . This documentation contains information for react router v6
+There were many changes made when react router was shifted from react-router v5 to v6 . 
+This documentation contains information for react router v6
 
 ### How to install React Router
 Run the below command in your terminal 
 ```
-npm i -D react-router-dom 
+npm i react-router-dom 
 ```
 
 ### Main Components of React Router are :-
