@@ -2,7 +2,7 @@
 <img src="/assests//react.js-img.png" alt="" style="width:100%;"/>
 
 ## Table of Content
-- What is React
+- Introduction to React
 - Advantages of React
 - Comparison between React and Angular
 - Getting Started with React
