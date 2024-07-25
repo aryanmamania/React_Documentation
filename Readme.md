@@ -4,7 +4,6 @@
 ## Table of Content
 - Introduction to React
 - Advantages of React
-- Comparison between React and Angular
 - Getting Started with React
 - Hello World 
 - Core Concepts of React 
@@ -38,28 +37,6 @@ Flexibility in React means the code is easier to work with and update because it
 - Single Web Page Application
 Building of single web page application can be considered as advantage of React because it provides Fast and Responsive User Experience
 
-
-## Comparision between React and Angular
-
-### React
-
-### Key Features
-- **Library**: Focuses on building reusable UI components.
-- **JSX**: Uses JSX, a syntax extension that allows HTML to be written within JavaScript.
-- **Virtual DOM**: Updates the UI efficiently by only re-rendering components that have changed.
-- **One-Way Data Binding**: Ensures a unidirectional data flow, making data management more predictable.
-- **React Hooks**: Introduced hooks to allow the use of state and other React features in functional components.
-- **Ecosystem**: Relies on third-party libraries for routing, state management, and other functionalities, offering great flexibility.
-
-### Angular -
-
-### Key Features
-- **Framework**: Provides a complete solution including UI components, routing, state management, form validation, and more.
-- **TypeScript**: Uses TypeScript, a statically typed superset of JavaScript, which helps catch errors early during development.
-- **Two-Way Data Binding**: Simplifies synchronization between the model and the view, making it easier to handle user input.
-- **RxJS**: Utilizes RxJS for reactive programming, making it easier to handle asynchronous data streams.
-- **Angular CLI**: Provides a powerful command-line interface to scaffold and manage projects easily.  
-
 ## Getting Started with React
 
 ## Installation
@@ -75,7 +52,10 @@ Before you begin, make sure you have the following installed on your machine:
 ### Steps
 
 1. **Install Node.js and npm**:
-   - Download and install Node.js from the official [Node.js website] (https://nodejs.org/).
+   - Download and install Node.js in linux with help of this command
+   - ```jsx
+     sudo apt install nodejs npm
+     ```
    - After downloading Verify the installation by running the following commands in your terminal:
      ```bash
      node -v
