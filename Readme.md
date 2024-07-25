@@ -31,8 +31,8 @@ ReactJS is much easier to learn and use. It comes with a good supply of document
 - Reusability 
 Reusability means that we can reuse same components in multiple different places within your project    
 
-- Flexibility  
-Flexibility in React means the code is easier to work with and update because it's built in small, separate pieces called components. This makes React code easier to understand and maintain compared to other frontend frameworks.
+- Flexibility
+ Flexibility in React means the code is easier to work with and update because it's built in small, separate pieces called components. This makes React code easier to understand and maintain compared to other frontend frameworks.
 
 - Single Web Page Application 
 Building of single web page application can be considered as advantage of React because it provides Fast and Responsive User Experience
