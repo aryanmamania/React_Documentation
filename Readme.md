@@ -53,7 +53,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 1. **Install Node.js and npm**:
    - Download and install Node.js in linux with help of this command
-   - ```jsx
+    ```jsx
      sudo apt install nodejs npm
      ```
    - After downloading Verify the installation by running the following commands in your terminal:
