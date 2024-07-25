@@ -25,8 +25,6 @@ React is a popular open-source JavaScript library  developed by Facebook for bui
 
 ## Advantages of React
 
-# Advantages of React
-
 ### Easy to Learn
 
 ReactJS is much easier to learn and use. It comes with a good supply of documentation, tutorials, and training resources. Any developer who comes from a JavaScript background can easily understand and start creating web apps using React in a few days.
