@@ -140,13 +140,33 @@ const myElement = (
 **Example 2**
 Write "Hello" if x is less than 10, otherwise "Goodbye":
 ```jsx
-const x = 5;
-let text = "Goodbye";
-if (x < 10) {
-  text = "Hello";
+// Import React
+import React from 'react';
+
+// Define the functional component
+function App() {
+  // Define the variables and logic
+  const x = 5;
+  let text = "Goodbye";
+  if (x < 10) {
+    text = "Hello";
+  }
+
+  // Create the element to be rendered
+  const myElement = <h1>{text}</h1>;
+
+  // Return the element to render it
+  return (
+    <div>
+      {myElement}
+    </div>
+ 
+  );
 }
 
-const myElement = <h1>{text}</h1>;
+// Export the component as default
+export default App;
+
 ```
 
 ### Components
